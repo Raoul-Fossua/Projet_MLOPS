@@ -1,0 +1,11 @@
+﻿numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.7.2
+mlflow==3.4.0
+fastapi==0.115.5
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pytest==8.3.3
+pytest-cov==5.0.0
+ruff==0.6.9
+mypy==1.11.2
