@@ -1,0 +1,44 @@
+artifact_path: mlflow-artifacts:/2/models/m-b623c8bd180d4c1393a532c2ccaf4f6e/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+is_signature_from_type_hint: false
+mlflow_version: 3.5.0
+model_id: m-b623c8bd180d4c1393a532c2ccaf4f6e
+model_size_bytes: 1162719891
+model_uuid: m-b623c8bd180d4c1393a532c2ccaf4f6e
+prompts: null
+run_id: 99213076b78042a7b58c92286fa403a8
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "Age", "required": true}, {"type": "long", "name":
+    "Income", "required": true}, {"type": "long", "name": "LoanAmount", "required":
+    true}, {"type": "long", "name": "CreditScore", "required": true}, {"type": "long",
+    "name": "MonthsEmployed", "required": true}, {"type": "long", "name": "NumCreditLines",
+    "required": true}, {"type": "double", "name": "InterestRate", "required": true},
+    {"type": "long", "name": "LoanTerm", "required": true}, {"type": "double", "name":
+    "DTIRatio", "required": true}, {"type": "string", "name": "Education", "required":
+    true}, {"type": "string", "name": "EmploymentType", "required": true}, {"type":
+    "string", "name": "MaritalStatus", "required": true}, {"type": "string", "name":
+    "HasMortgage", "required": true}, {"type": "string", "name": "HasDependents",
+    "required": true}, {"type": "string", "name": "LoanPurpose", "required": true},
+    {"type": "string", "name": "HasCoSigner", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-10-17 21:19:09.559130'

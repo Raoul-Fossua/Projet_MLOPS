@@ -1,0 +1,78 @@
+{
+  "dataframe_split": {
+    "columns": [
+      "Age",
+      "Income",
+      "LoanAmount",
+      "CreditScore",
+      "MonthsEmployed",
+      "NumCreditLines",
+      "InterestRate",
+      "LoanTerm",
+      "DTIRatio",
+      "Education",
+      "EmploymentType",
+      "MaritalStatus",
+      "HasMortgage",
+      "HasDependents",
+      "LoanPurpose",
+      "HasCoSigner"
+    ],
+    "data": [
+      [
+        45,
+        37039,
+        247916,
+        624,
+        19,
+        2,
+        4.62,
+        60,
+        0.85,
+        "High School",
+        "Unemployed",
+        "Married",
+        "No",
+        "Yes",
+        "Auto",
+        "No"
+      ],
+      [
+        48,
+        133963,
+        66275,
+        494,
+        119,
+        3,
+        14.72,
+        48,
+        0.49,
+        "PhD",
+        "Self-employed",
+        "Married",
+        "Yes",
+        "Yes",
+        "Other",
+        "Yes"
+      ],
+      [
+        47,
+        100204,
+        6967,
+        718,
+        108,
+        3,
+        5.51,
+        24,
+        0.76,
+        "High School",
+        "Self-employed",
+        "Single",
+        "Yes",
+        "Yes",
+        "Business",
+        "Yes"
+      ]
+    ]
+  }
+}
