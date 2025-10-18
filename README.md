@@ -7,10 +7,10 @@ L’objectif de ce projet est de prédire la **probabilité de défaut de paieme
 
 ## 👥 Membres du groupe 
 
-Naya Maoudana KARE
-Raoul FOSSUA
-Issa BICHARA
-Anais DELIGNY
+- Naya Maoudana KARE
+- Raoul FOSSUA
+- Issa BICHARA
+- Anais DELIGNY
 
 ## 🧠 Démarche MLOps
 
@@ -31,7 +31,7 @@ Le projet suit une approche **MLOps end-to-end** incluant :
    - Tracking des hyperparamètres, métriques et artefacts.
 5. **Déploiement**
    - Application web **Streamlit** pour tester le modèle.
-   - Déploiement sur le **Cloud (Google Cloud Run)** via **CI/CD GitHub Actions**.
+   - Déploiement sur le **Cloud** via **CI/CD GitHub Actions**.
 
 ---
 
@@ -110,13 +110,7 @@ L’application permet :
 Le déploiement est automatisé via **GitHub Actions** :
 - Build de l’image Docker
 - Push sur **Google Container Registry**
-- Déploiement sur **Google Cloud Run**
-
-### Secrets nécessaires sur GitHub :
-- `GCP_PROJECT`  
-- `GCP_REGION`  
-- `GCP_SA_KEY`  
-- `MLFLOW_TRACKING_URI`
+- Déploiement
 
 ---
 
@@ -149,6 +143,7 @@ Le déploiement est automatisé via **GitHub Actions** :
 ## 🏁 Conclusion
 
 Ce projet illustre une **pipeline MLOps complète**, combinant :
+
 - préparation des données,
 - modélisation supervisée,
 - suivi d’expériences MLflow,
