@@ -1,18 +1,39 @@
-ï»¿.venv/
-__pycache__/
+# --- Python / venv ---
+.venv/
+env/
 *.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pkl
 .ipynb_checkpoints/
 
+# --- Config locales ---
+.env
+*.env
+
+# --- MLflow local (ne PAS versionner) ---
 mlflow.db
 mlruns/
 mlartifacts/
+mlruns.db
+mlruns.sqlite
+mlartifacts.db
+mlflow.log
 
-.vscode/.venv/
-__pycache__/
-mlartifacts/
-mlflow.db
-.env
+# --- Modèles exportés localement (on passe par MLflow Registry / artefacts) ---
+model/
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Tests / coverage ---
+.coverage
+htmlcov/
+.pytest_cache/
+
+# --- Uvicorn / logs ---
 *.log
-*.ipynb_checkpoints/
-.git/
-
