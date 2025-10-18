@@ -7,7 +7,7 @@ L’objectif de ce projet est de prédire la **probabilité de défaut de paieme
 
 ## 👥 Membres du groupe 
 
-- Naya Maoudana KARE
+- NAYA MAOUDANA KARE
 - Raoul FOSSUA
 - Issa BICHARA
 - Anais DELIGNY
