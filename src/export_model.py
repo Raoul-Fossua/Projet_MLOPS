@@ -1,8 +1,4 @@
-# À la racine du projet
-cd "C:\Users\User\Documents\DU_SDA_6\Projet_MLOPS"
-
-@'
-import os, shutil
+﻿import os, shutil
 from pathlib import Path
 import mlflow
 from mlflow.tracking import MlflowClient
@@ -14,7 +10,7 @@ DEST     = Path("model")
 
 def main():
     client = MlflowClient(tracking_uri=TRACKING)
-    mv = client.get_model_version_by_alias(NAME, ALIAS)  # alias -> version
+    mv = client.get_model_version_by_alias(NAME, ALIAS)
     uri = client.get_model_version_download_uri(NAME, mv.version)
 
     if DEST.exists():
@@ -26,4 +22,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-'@ | Set-Content -Encoding utf8 .\export_model.py
