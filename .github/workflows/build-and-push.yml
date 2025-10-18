@@ -2,7 +2,7 @@
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
@@ -12,8 +12,11 @@ jobs:
       contents: read
       packages: write
     steps:
-      - name: Checkout
+      - name: Checkout (with LFS)
         uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -30,4 +33,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}/loan-api:latest
+          tags: ghcr.io/${{ toLower(github.repository) }}/loan-api:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
